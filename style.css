@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+    width: 100wh;
+}
+
+body{
+
+    background: linear-gradient(72deg, rgb(11, 117, 223), rgb(90, 160, 23),rgb(166, 198, 229));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topo{
+   display: flex;
+   align-items: center;
+   margin: 20px;
+   position:relative; /* fica absoluto à classe pai (DIV), enquanto o absoluto fica relativo à tela*/ 
+   padding-left: 8%;
+}
+
+.redes{
+    padding-bottom: 50px;
+    justify-content: space-around;
+    letter-spacing: 10px;
+}
+.redes p{
+    text-align: center;
+    letter-spacing: 3px;
+    color: rgb(187, 255, 0);
+    margin: 5px;
+    display: flex;
+    
+}
+
+.redes i{
+    font-size: 35px;
+    color: rgb(187, 255, 0);
+}
+
+.redes i:hover{
+    transition: .5ms;
+    transform: scale(1.05);
+    color: rgb(35, 70, 230);
+}
+
+header{
+    color: #ffff;
+    font-size: 30px;
+    text-align: center;
+    padding: auto;
+    border: 2px solid white;
+    border-radius: 30px;
+    border-left: none;
+    border-right: none;
+    width: 600px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    height: 100px;
+}
+
+#nome h1{
+    
+    background-image: linear-gradient(to right, rgb(13, 255, 122), rgb(35, 70, 230),rgb(52, 226, 96));
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.main-content{
+    text-align: justify;
+    color: rgb(219, 219, 219);
+    font-size: 16px;
+    letter-spacing: .1rem;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid white;  
+    border-radius: 10px;  
+    box-shadow: 1px 1px 3px;
+}
+.main-content h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2#titulo{
+    text-align: center;
+    font-size: 32px;
+    margin: 10px auto;
+    color: white;
+    letter-spacing: 5px;
+    padding-top: 150px;
+}
+
+.projetos-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border: none;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    height: 400px;
+    
+}
+
+.projeto{
+    color: white;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;  
+    box-shadow: 1px 1px 1px;
+    height: 300px;
+    width: 200px;
+    margin: 20px 30px;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.projeto p{
+    font-size: 12px;
+    display: list-item;
+    margin-left: 70px;
+    text-align: justify;
+}
+
+.projeto:hover{
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px;
+}
+
+.projeto i{
+    margin: 60px auto;
+    align-items: center;
+    font-size: 60px;
+    color: rgb(187, 255, 0);
+}
+
+.projeto i:hover{
+    color: rgb(35, 70, 230);
+}

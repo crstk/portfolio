@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/*zerando CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+
+/*Fundo-tela*/
+
+html{
+    height: 100vh; /*view height*/
+    width: 100vw;   /*view width*/
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(17,17,17,0.8), rgba(20,20,20, 1)), url(img/evoluirfitacademy.JPG);
+    background-position-x: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+/*Menu - header - Nav-bar*/
+
+header{
+    width: 100%;
+    height: 6vh;
+    background: rgba(22, 22, 22, 0.2);
+}
+
+#fotos{
+    font-size: 20px;
+    text-align: center;
+    margin: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem; /* = 18px*/
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem; /*distanciamento entre as letras*/
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+    
+}
+
+.logo:hover{
+    box-shadow: 0px 0px 20px;
+    background: white;
+    transition: .8s;
+    color: rgb(51, 230, 28);;
+    border-radius: 5px;
+    height: 50px;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+
+.menu-content .list-itens {
+    display: flex; /*para ficar um do lado do outro*/
+    list-style: none; /*tira a cfg padrao*/
+    gap: 10px; /*distanciamento entre os ítens*/
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative; /*relative */
+    
+    
+}
+
+.menu-content .list-itens a:before { /*efeito sublinhado*/
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(51, 230, 28);
+    transition: all 1s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+width: 100%;
+
+}
+
+/* Centro - conteudo principal */
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex; /*coloca um ao lado do outro*/
+    flex-direction: column; /* direciona a posicao dos elementos*/
+    justify-content: center;
+    align-items: center;
+}
+
+/*Textos conteudo principal*/
+
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    height: 15vh;
+}
+
+.second-text {
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+    height: 15vh;
+}
+
+/*Botões*/
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns button {
+
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover {
+    color: rgb(51, 230, 28);
+    border: none;
+
+}
+
+.btns button:before {
+    content: '';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1; /* posiciona o efeito no fundo do texto*/
+    transition: 1s;
+
+}
+
+.btns button:hover:before {
+    width: 100%;
+} 
+
+
+/* CSS Contatos*/
+
+.main-content .contatos{
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    width: 850px;
+    margin: auto;
+    
+}
+
+
+.main-content .contatos p{
+    display: inline;
+    margin: 10px;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.main-content .endereco p{
+    margin: 20px;
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    align-items: center;
+}
+
+/* CSS Agendar */
+
+.main-content .ipts{
+    background: #ffffff50;
+    letter-spacing: 2px;
+    border: 1px solid rgb(61, 61, 61);
+    display: block;
+    padding: 7px;
+    border-radius: 6px;
+    margin: 5px;
+    width: 300px;
+    color: white;
+}
+
+.main-content #agenda{
+    width: 200px;
+    margin: 5px;
+}
+
+.main-content #lbs{
+    font-size: 14px;
+    padding: 5px;
+}
+
+.main-content #btnSub{
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    margin: 7px;
+    transition: 2ms;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+.main-content #btnSub:hover{
+    color: rgb(51, 230, 28);
+    border: 1px solid rgb(51, 230, 28);;
+    background-color: #ffffff31;
+    transition: 0.4s;
+}
+
+/* CSS Fotos */
+
+#divFotos{
+    margin-top: 30px;
+}
+
+img{
+    display: flex;
+    padding: 3px;
+    margin: auto;
+    max-width: 60%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border:solid .1rem rgb(51, 230, 28);
+    cursor: pointer;
+}
+
+img:hover{
+    box-shadow: 0px 0px 6px rgb(51, 230, 28);
+    transition: 3ms;
+    transform: scale(1.05);
+}
+
+.fotos{
+    column-count: 4;
+    column-gap: 1px;
+}
+
+/* CSS Rodapé */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-fotos{
+    text-align: center;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+footer#idContatos{
+    height: 0.1rem;
+}

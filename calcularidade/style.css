@@ -1,0 +1,34 @@
+body{
+background: rgb(197, 218, 238);
+
+}
+
+#header{
+    text-align: center;
+    margin: 10px auto;
+}
+
+div#res{
+    text-align: center;
+    margin: auto;
+    padding-top: 10pt;
+}
+
+#txtano{
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+#main-content{
+    border: 1px solid;
+    border-radius: 5px;
+    width: 60%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+    margin: auto;
+    padding-top: 10pt;
+}
